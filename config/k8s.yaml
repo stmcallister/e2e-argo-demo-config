@@ -12,11 +12,11 @@ spec:
     metadata:
       labels:
         app: burgerback
-        version: IMAGE_LABEL
+        version: aee4c3d54a4ea64114bdb4e72c5c8058dee7aca4
     spec:
       containers:
       - name: burgerback
-        image: DOCKER_URL/burger-back:IMAGE_LABEL
+        image: stmcallisterbridge4/burger-back:aee4c3d54a4ea64114bdb4e72c5c8058dee7aca4
         resources: 
           requests:
             memory: "100Mi"
@@ -39,11 +39,11 @@ spec:
     metadata:
       labels:
         app: burgerfront
-        version: IMAGE_LABEL
+        version: aee4c3d54a4ea64114bdb4e72c5c8058dee7aca4
     spec:
       containers:
       - name: burgerfront
-        image: DOCKER_URL/burger-front:IMAGE_LABEL
+        image: stmcallisterbridge4/burger-front:aee4c3d54a4ea64114bdb4e72c5c8058dee7aca4
         ports:
         - containerPort: 3000
         env:
@@ -87,7 +87,7 @@ metadata:
 spec:
   ingressClassName: ngrok
   rules:
-  - host: FRONTEND_URL
+  - host: bp-test-1-kubecon-eu-25.ngrok.io
     http:
       paths:
       - pathType: Prefix
