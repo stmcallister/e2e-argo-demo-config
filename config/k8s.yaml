@@ -87,7 +87,7 @@ metadata:
 spec:
   ingressClassName: ngrok
   rules:
-  - host: bp-test-1-kubecon-eu-25.ngrok.io
+  - host: seattle-burger-places.ngrok.io
     http:
       paths:
       - pathType: Prefix
